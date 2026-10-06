@@ -1,0 +1,9 @@
+# System junk files
+.DS_Store
+Thumbs.db
+
+# Private info (passwords, API keys)
+.env
+
+# Folders you may add later
+node_modules/

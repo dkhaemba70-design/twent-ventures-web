@@ -1,0 +1,142 @@
+/* ---------- About page ---------- */
+.about-hero,
+.about-story,
+.about-values,
+.about-stats,
+.about-cta {
+    background:
+        radial-gradient(circle at 0% 50%, rgba(0, 238, 255, 0.12), transparent 40%),
+        radial-gradient(circle at 100% 50%, rgba(0, 238, 255, 0.12), transparent 40%),
+        linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        #0b0f1a;
+    background-size: auto, auto, 40px 40px, 40px 40px, auto;
+    color: #e8eefc;
+    text-align: center;
+    padding: 50px 20px;
+    border-bottom: 1px solid #1e293b;
+}
+
+/* Page title */
+.about-hero {
+    padding-top: 70px;
+}
+
+.about-hero .eyebrow,
+.about-values .eyebrow {
+    color: var(--neonBlue);
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
+    margin: 0 0 6px;
+}
+
+.about-hero h1 {
+    font-size: 2.6rem;
+    margin: 0 0 8px;
+}
+
+.about-hero h1::after,
+.about-story h2::after,
+.about-values h2::after,
+.about-cta h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: var(--neonBlue);
+    border-radius: 2px;
+    margin: 12px auto 0;
+}
+
+.about-hero .section-sub {
+    margin: 16px 0 0;
+}
+
+/* Who we are */
+.about-story {
+    max-width: none;
+}
+
+.about-photo {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    height: 280px;
+    object-fit: cover;
+    margin: 0 auto 30px;
+    border: 2px solid var(--neonBlue);
+    border-radius: 12px;
+}
+
+.about-story h2,
+.about-values h2,
+.about-cta h2 {
+    font-size: 2rem;
+    margin: 0 0 20px;
+}
+
+.about-story p {
+    max-width: 700px;
+    margin: 0 auto 14px;
+    color: #cbd5e1;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* Value boxes and numbers */
+.value-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 900px;
+    margin: 30px auto 0;
+}
+
+.value-card {
+    background: #111827;
+    border: 1px solid #1e293b;
+    border-radius: 12px;
+    padding: 24px 16px;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.value-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--neonBlue);
+}
+
+.value-card h3 {
+    margin: 0 0 8px;
+    color: var(--neonBlue);
+}
+
+.value-card p {
+    margin: 0;
+    color: #94a3b8;
+}
+
+.stat-number {
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--neonBlue);
+}
+
+.stat-label {
+    display: block;
+    margin-top: 4px;
+    color: #94a3b8;
+}
+
+.about-stats .value-grid {
+    margin-top: 0;
+}
+
+/* Call to action */
+.about-cta .primary-btn,
+.about-cta .secondary-btn {
+    display: inline-block;
+    width: auto;
+    margin: 6px 8px;
+    padding: 12px 28px;
+}

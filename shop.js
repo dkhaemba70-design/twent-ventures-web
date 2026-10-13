@@ -157,7 +157,7 @@ filterButtons.addEventListener("click", function (event) {
 
 // ---------- Search and sort ----------
 searchBox.addEventListener("input", function () {
-    searchText = searchBox.value.trim();
+    searchText = searchBox.value.trim().slice(0, 50);
     applyFilters();
 });
 

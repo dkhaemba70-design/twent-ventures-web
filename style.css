@@ -492,3 +492,30 @@ header,
         #0b0f1a;
     background-size: auto, auto, 40px 40px, 40px 40px, auto;
 }
+
+/* ---------- Small screens (phones) ---------- */
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+        gap: 12px;
+        padding: 1rem;
+    }
+
+    header ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .logo-name {
+        font-size: 1.3rem;
+    }
+
+    .hero {
+        padding: 32px 16px;
+        min-height: 50vh;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+}
